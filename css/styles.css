@@ -466,17 +466,8 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     background-color: #31D0AA;
 }
 
-
-
-.footer-form {
-display: flex;
-    gap: 24px;
-    align-items: end;
-}
-
 .subscribe {
-    
-    
+    margin-bottom: 16px;
     color: var(--white);
     font-size: 16px;
     font-style: normal;
@@ -485,10 +476,18 @@ display: flex;
     letter-spacing: 0.02em;
 }
 
+.footer-form {
+display: flex;
+    gap: 24px;
+    /* align-items: end; */
+}
+
+
+
 
 
 .footer-input {
-    margin-top: 16px;
+   
     width: 264px;
     height: 40px;
     padding: 8px 16px;
@@ -722,7 +721,7 @@ display: flex;
 }
 
 .checkbox-label {
-    display: flex;
+    display: block;
     justify-content: center;
         align-items: center;
         color: var(--light-slate);
