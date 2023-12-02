@@ -466,8 +466,17 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     background-color: #31D0AA;
 }
 
+
+
+.footer-form {
+display: flex;
+    gap: 24px;
+    align-items: end;
+}
+
 .subscribe {
-    margin-bottom: 16px;
+    
+    
     color: var(--white);
     font-size: 16px;
     font-style: normal;
@@ -476,12 +485,10 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     letter-spacing: 0.02em;
 }
 
-.footer-form {
-    display: flex;
-    gap: 24px;
-}
+
 
 .footer-input {
+    margin-top: 16px;
     width: 264px;
     height: 40px;
     padding: 8px 16px;
@@ -615,6 +622,7 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 .modal-text {
     margin-bottom: 16px;
+    text-align: center;
     color: var(--navy-blue);
     font-size: 16px;
     font-weight: 500;
@@ -628,7 +636,7 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 .form-label {
     display: block;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     color: var(--light-slate);
     font-size: 12px;
     font-weight: 400;
@@ -714,7 +722,7 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .checkbox-label {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
         align-items: center;
         color: var(--light-slate);
@@ -738,28 +746,19 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     border-radius: 2px;
     cursor: pointer;
     outline: 0px solid transparent;
+    fill: transparent;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-checkbox:checked+.checkbox-label>.own-form-checkbox {
     background-color: var(--ocean);
-    border-color: var(--ocean);
+    border: none;
+fill: var(--cloud);
 }
 
 .form-checkbox:focus+.checkbox-label>.own-form-checkbox {
     outline: 2px solid rgba(0, 0, 255, 0.5);
-}
-
-.form-cheked-icon {
-    opacity: 0;
-    fill: var(--cloud);
-
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-checkbox:checked+.checkbox-label .form-cheked-icon {
-    opacity: 1;
 }
 
 .privacy-policy-link {
